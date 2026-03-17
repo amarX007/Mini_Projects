@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #023250;
+    color: #543939;
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    padding: 20px;
+    margin:0 ;
+    width: 90%;
+    max-width: 600px;
+    background: hwb(186 83% 13%);
+    border-radius: 6px;
+    box-shadow: 3px 3px 28px rgba(0, 0, 0, 0.536);
+}
+
+.container h1{
+    font-weight: 550;
+    font-size: 40px;
+}
+
+.container span{
+    color: #039f47;
+    border-bottom: 4px dotted #039f47;
+    padding-bottom: 8px;
+}
+
+/* password box */
+.visible{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px ;
+}
+
+
+
+
+.visible input{
+    /* flex: 1; */
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.visible img{
+    width: 30px;
+    cursor: pointer;
+}
+
+button{
+    border: 0;
+    outline: 0;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+    background: #039f47;
+    color: #fff;
+
+    /* display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.container button img{
+    width: 25px;
+}
+
+@media (max-width: 600px){
+    .container{
+        margin: 15vh auto;
+    }
+
+    .container h1{
+        font-size: 30px;
+    }
+
+    .container span{
+        border-bottom: 3px dotted #039f47;
+    }
+
+    button{
+        width: 70%;
+        font-size: 15px;
+
+    }
+
+    .visible img{
+        width: 24px;
+    }
+}
