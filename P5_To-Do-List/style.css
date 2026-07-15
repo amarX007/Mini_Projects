@@ -50,11 +50,13 @@
 
 input {
     flex: 1;
+    min-width: 0;
     border: none;
     outline: none;
     background: none;
     padding: 10px;
-    font-weight: 14px;
+    font-size: 15px;
+    /* font-weight: 14px; */
 }
 
 button {
@@ -119,4 +121,42 @@ ul li span:hover {
 
 #list_container li.checked::before {
     background-image: url(images/checked.png);
+}
+
+@media (max-width: 600px) {
+    .todo-web {
+        margin: 40px auto 20px;
+        padding: 30px 15px 40px;
+    }
+
+    .row {
+        padding-left: 10px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 10px 8px 10px 40px;
+    }
+
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 8px;
+    }
+
+    ul li span {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+    }
 }
