@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #023250;
+    background: #081161;
     color: #543939;
     font-family: 'Poppins', sans-serif;
 
@@ -30,8 +30,8 @@ body{
 }
 
 .container span{
-    color: #039f47;
-    border-bottom: 4px dotted #039f47;
+    color: #0ab3e2;
+    border-bottom: 4px dotted #0ab3e2;
     padding-bottom: 8px;
 }
 
@@ -68,11 +68,11 @@ body{
 button{
     border: 0;
     outline: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     border-radius: 5px;
-    background: #039f47;
+    background: #0ab3e2;
     color: #fff;
 
     /* display */
@@ -82,6 +82,12 @@ button{
     padding: 12px 20px;
     cursor: pointer;
     gap: 10px;
+
+    transition: transform .5s ease;
+}
+
+button:hover {
+    transform: translateX(4px);
 }
 
 .container button img{
